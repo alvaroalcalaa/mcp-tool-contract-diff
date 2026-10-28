@@ -1,0 +1,37 @@
+{
+  "tools": [
+    {
+      "name": "search_notes",
+      "description": "Busca notas dentro de un proyecto de Bruma",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "combat",
+              "story"
+            ]
+          },
+          "project": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query",
+          "project"
+        ]
+      }
+    },
+    {
+      "name": "list_projects",
+      "description": "Lista proyectos ficticios",
+      "inputSchema": {
+        "type": "object",
+        "additionalProperties": false
+      }
+    }
+  ]
+}
