@@ -1,0 +1,26 @@
+{
+  "tools": [
+    {
+      "name": "search_notes",
+      "description": "Busca notas del prototipo Bruma",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "category": {
+            "enum": [
+              "combat",
+              "story",
+              "audio"
+            ]
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    }
+  ]
+}
